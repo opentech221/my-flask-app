@@ -40,7 +40,7 @@ Pour démarrer l'application, exécutez la commande suivante :
 python app.py
 ```
 
-L'application sera accessible à l'adresse `http://127.0.0.1:5000/`.
+Assurez-vous que l'application Flask est en cours d'exécution. L'application sera accessible à l'adresse `http://127.0.0.1:5000/`.
 
 ## Contribuer
 

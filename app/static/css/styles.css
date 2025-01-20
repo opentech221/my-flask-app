@@ -31,3 +31,48 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #35424a;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff;
+    background-color: #35424a;
+}
+
+footer .container {
+    padding: 20px 0;
+}
+
+footer .text-uppercase {
+    font-weight: bold;
+}
+
+footer .list-unstyled a {
+    color: #35424a;
+    text-decoration: none;
+}
+
+footer .list-unstyled a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer .btn-primary {
+    background-color: #35424a;
+    border-color: #35424a;
+}
+
+footer .btn-primary:hover {
+    background-color: #ffffff;
+    color: #35424a;
+}

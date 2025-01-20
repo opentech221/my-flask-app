@@ -1,21 +1,77 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
     <title>Page d'accueil</title>
 </head>
 <body>
+    <!-- bootstrap nav bar with latest practices -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Mon Application Flask</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fonctionnalités</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tarifs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Désactivé</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <header>
         <h1>Bienvenue sur mon application Flask</h1>
     </header>
     <main>
         <p>Ceci est une application simple utilisant Flask pour le backend et HTML, CSS, JS pour le frontend.</p>
     </main>
-    <footer>
-        <p>&copy; 2023 Mon Application Flask</p>
+    <!-- bootstrap footer with latest practices -->
+    <footer class="bg-primary text-center text-lg-start text-white">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Mon Application Flask</h5>
+                    <p>
+                        Ceci est une application simple utilisant Flask pour le backend et HTML, CSS, JS pour le frontend.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Liens utiles</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Fonctionnalités</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Tarifs</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2023 Mon Application Flask
+            <button id="myButton" class="btn btn-primary ml-3">Cliquez-moi</button>
+        </div>
     </footer>
-    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>

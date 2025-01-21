@@ -12,9 +12,9 @@ my-flask-app
 │   │   │   └── styles.css
 │   │   ├── js
 │   │   │   └── scripts.js
-│   ├── templates
 │   │   └── index.html
 │   └── __init__.py
+├── templates
 ├── app.py
 ├── requirements.txt
 └── README.md
